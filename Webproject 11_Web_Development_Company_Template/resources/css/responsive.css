@@ -1,0 +1,31 @@
+@media only screen and (max-width: 93rem) {
+    .about-img {
+        float: none;
+        padding-bottom: 2rem;
+        ;
+    }
+}
+
+@media only screen and (max-width: 93rem) {
+    .about-para p {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 93rem) {
+    html {
+        font-size: 53.5%;
+    }
+}
+
+@media only screen and (max-width: 74.3rem) {
+    html {
+        font-size: 40.5%;
+    }
+}
+
+@media only screen and (max-width: 66.3rem) {
+    html {
+        font-size: 36.5%;
+    }
+}

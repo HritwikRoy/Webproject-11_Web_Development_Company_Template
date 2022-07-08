@@ -1,0 +1,273 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: url("img/body-bg.jpg");
+}
+
+
+/* reusable component */
+
+i {
+    font-size: 4.4rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 4.3rem;
+    /* padding-bottom: 3rem;*/
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+button {
+    width: 15rem;
+    height: 4.5rem;
+    border-radius: .8rem;
+}
+
+.row {
+    max-width: 114.8rem;
+    margin: auto;
+}
+
+
+/* header section */
+
+header {
+    background-color: rgb(228, 212, 212);
+}
+
+.nav {
+    height: 11rem;
+}
+
+.nav img {
+    width: 9rem;
+    float: left;
+    margin-top: 1.5rem;
+}
+
+.nav nav {
+    float: right;
+}
+
+.contact {
+    background-color: rgb(62, 241, 107);
+    border-radius: 0.5rem;
+    box-shadow: .2rem .3rem .4rem rgb(41, 68, 13);
+}
+
+.home:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 4.1rem 0rem;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(12, 12, 12);
+}
+
+nav ul li a:hover {
+    background-color: rgb(62, 241, 107);
+    border-radius: 0.5rem;
+    box-shadow: .2rem .3rem .4rem rgb(41, 68, 13);
+    transition: .37s;
+}
+
+.con-img {
+    background: url(img/Contact-Top-Cover.jpg);
+    height: 40rem;
+    background-repeat: no-repeat;
+    background-position: 0rem -48.8rem;
+    background-size: cover;
+}
+
+.con-img h2 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 23rem;
+    text-shadow: .2rem .2rem .3rem black;
+    font-family: "Abel", Sans-serif;
+    font-size: 8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/*  concate  section */
+
+.contact-section {
+    padding: 5rem;
+    background: linear-gradient(rgba(60, 84, 153, 0.9), rgb(60, 84, 153, 0.9)), url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #f6f6f8;
+}
+
+.contact-section h2::after {
+    background: #273a71;
+}
+
+.contact-section .little-description {
+    color: #fff;
+}
+
+.contact-section form {
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    background-color: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+    color: #fff;
+}
+
+.contact-section textarea {
+    height: 20rem;
+}
+
+.contact-section form ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-submit {
+    width: 20rem;
+    height: 6rem;
+    margin-top: 2rem;
+    border: 0;
+    border-bottom: .3rem solid #299ec5;
+    background: #30bae7;
+    border-radius: 1rem;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: rgb(31, 12, 48);
+    color: rgb(248, 245, 245);
+    box-shadow: .2rem .2rem .35rem rgb(37, 37, 37);
+    transition: .55s;
+}
+
+
+/*  footer  section */
+
+.footer-section {
+    background: #1d1c1c;
+    padding: 5rem 0;
+    text-align: right;
+    border-top: .2rem solid #1b3b46;
+}
+
+.footer-section p {
+    float: left;
+    color: #fff
+}
+
+.footer-section ul li {
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-section ul li a:hover {
+    color: #30dae7
+}
+
+
+/* add whatsapp */
+
+.whatsapp {
+    position: fixed;
+    right: 0px;
+    top: 63.5%;
+}
+
+.whatsapp h5 {
+    color: white;
+    background: #20b20f;
+    font-size: 1.29rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.facebook {
+    position: fixed;
+    right: 0px;
+    top: 73%;
+}
+
+.facebook h5 {
+    color: white;
+    background: #0c08fc;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.phone {
+    position: fixed;
+    right: 0px;
+    top: 82.2%;
+}
+
+.phone h5 {
+    color: white;
+    background: #01ff0e;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 10px;
+}

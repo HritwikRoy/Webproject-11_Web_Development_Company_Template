@@ -1,0 +1,521 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+/* reusable component */
+
+i {
+    font-size: 4.4rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 4.3rem;
+    padding-bottom: 3rem;
+}
+
+h3 {
+    font-size: 2.3rem;
+}
+
+p {
+    font-size: 1.8rem;
+}
+
+button {
+    width: 15rem;
+    height: 4.5rem;
+    border-radius: .8rem;
+}
+
+.row {
+    max-width: 114.8rem;
+    margin: auto;
+}
+
+
+/* header section */
+
+header {
+    background-color: rgb(228, 212, 212);
+}
+
+.nav {
+    height: 11rem;
+}
+
+.nav img {
+    width: 9rem;
+    float: left;
+    margin-top: 1.5rem;
+}
+
+.nav nav {
+    float: right;
+}
+
+.home {
+    background-color: rgb(62, 241, 107);
+    border-radius: 0.5rem;
+    box-shadow: .2rem .3rem .4rem rgb(41, 68, 13);
+}
+
+.home:hover {
+    color: rgb(255, 255, 255);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 4.1rem 0rem;
+}
+
+nav ul li a {
+    font-size: 2rem;
+    padding: .7rem 1.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(12, 12, 12);
+}
+
+nav ul li a:hover {
+    background-color: rgb(62, 241, 107);
+    border-radius: 0.5rem;
+    box-shadow: .2rem .3rem .4rem rgb(41, 68, 13);
+    transition: .37s;
+}
+
+
+/*banner section */
+
+.banner-section {
+    width: 100%;
+    height: 57rem;
+    animation-name: sample;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-top: 0.4rem solid rgb(245, 221, 176);
+}
+
+@keyframes sample {
+    0% {
+        background: url(img/alex-kotliarskyi-ourQHRTE2IM-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    25% {
+        background: url(img/austin-distel-wD1LRb9OeEo-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    50% {
+        background: url(img/cyber-security-3400657_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    75% {
+        background: url(img/fingerprint-979598_1280.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    100% {
+        background: url(img/security-3728124_1920.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+}
+
+.hero-section {
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 8.5rem;
+    color: rgb(251, 255, 0);
+    margin-bottom: 2rem;
+    margin-top: 16%;
+    text-align: center;
+}
+
+.hero-section button {
+    width: 20rem;
+    height: 6rem;
+    background-color: rgb(251, 255, 0);
+    color: rgb(0, 0, 0);
+    margin-left: 77%;
+    margin-top: 2%;
+}
+
+.hero-section button:hover {
+    background-color: rgb(31, 12, 48);
+    color: rgb(248, 245, 245);
+    box-shadow: .2rem .2rem .3rem whitesmoke;
+    transition: .55s;
+}
+
+
+/*about  section */
+
+.about-section {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(rgb(255, 255, 255, 0.9), rgb(255, 255, 255, 0.9)), url("img/skill-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.about-img {
+    float: left;
+}
+
+.about-img img {
+    width: 37rem;
+    height: 37rem;
+}
+
+.about-para {
+    float: right;
+    margin-left: 2.7rem;
+}
+
+.about-para p {
+    width: 70rem;
+    height: 15rem;
+}
+
+.about-para h2 {
+    text-shadow: .2rem .3rem .4rem rgb(184, 164, 164);
+}
+
+.about-para button {
+    width: 20rem;
+    height: 6rem;
+    background-color: rgb(234, 238, 6);
+    margin-left: 47rem;
+    margin-top: 6rem;
+}
+
+.about-para button h6 {
+    font-size: 2.2rem;
+}
+
+.about-para button:hover {
+    background-color: rgb(31, 12, 48);
+    color: rgb(248, 245, 245);
+    box-shadow: .2rem .2rem .35rem rgb(37, 37, 37);
+    transition: .55s;
+}
+
+
+/*  skill section */
+
+.skill-section {
+    width: 100%;
+    padding: 5rem;
+    display: inline-block;
+    background: linear-gradient(rgba(122, 113, 113, 0.57), rgba(122, 111, 111, 0.57)), url("img/400195.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.skill-section h2,
+.skill-section h3 {
+    color: #daec31;
+}
+
+.skill-section p {
+    color: #fff;
+    width: 80rem;
+    text-align: center;
+    margin: auto;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+.skill-section h2::after {
+    background: rgba(73, 75, 74, 0.867);
+}
+
+.skill-section .box {
+    margin-top: 4.5rem;
+}
+
+.radial-progress circle {
+    stroke-width: 5;
+}
+
+svg.radial-progress text {
+    fill: #3a3f4d;
+    font-size: 1.5rem;
+}
+
+svg.web-design circle {
+    stroke: #30bae7;
+}
+
+svg.html-css circle {
+    stroke: #f31009;
+}
+
+svg.graphic-design circle {
+    stroke: #08e691;
+}
+
+
+/*   team section */
+
+
+/* ********************* */
+
+.team-section {
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(rgb(251, 241, 248, 0.9), rgb(251, 241, 248, 0.9)), url("img/team-bg.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.team-section h2 {
+    color: #3c4761;
+}
+
+.team-section h2::after {
+    background: #cfdfe9;
+    /*clear:*/
+}
+
+.team-member {
+    margin-top: 4.5rem;
+    margin-bottom: 3.5rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.team-section h3 {
+    color: #4a4d5a;
+}
+
+.role {
+    color: #3abff0;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-top: .5rem;
+    display: inline-block;
+}
+
+.team-member .box p {
+    color: #a1abba;
+}
+
+.team-section p {
+    margin-top: .5rem;
+}
+
+.social-link {
+    margin-top: 4.5rem;
+}
+
+.social-link ul li {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+
+.social-link ul li a {
+    color: #ffff;
+}
+
+.social-link ul li a i::before {
+    background: #bdd1df;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: .5s;
+}
+
+.social-link ul li a:hover i::before {
+    background: #643a79;
+    transform: rotate(360deg);
+}
+
+
+/*  concate  section */
+
+.contact-section {
+    padding: 5rem;
+    background: linear-gradient(rgba(60, 84, 153, 0.9), rgb(60, 84, 153, 0.9)), url(img/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 30%;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: #f6f6f8;
+}
+
+.contact-section h2::after {
+    background: #273a71;
+}
+
+.contact-section .little-description {
+    color: #fff;
+}
+
+.contact-section form {
+    margin-top: 5rem;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="text"],
+.contact-section textarea {
+    background-color: #273a71;
+    border: .1rem solid #273a71;
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    margin: .5rem 0;
+    color: #fff;
+}
+
+.contact-section textarea {
+    height: 20rem;
+}
+
+.contact-section form ::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+.btn-submit {
+    width: 20rem;
+    height: 6rem;
+    margin-top: 2rem;
+    border: 0;
+    border-bottom: .3rem solid #299ec5;
+    background: #30bae7;
+    border-radius: 1rem;
+}
+
+.btn-submit:hover {
+    cursor: pointer;
+    background-color: rgb(31, 12, 48);
+    color: rgb(248, 245, 245);
+    box-shadow: .2rem .2rem .35rem rgb(37, 37, 37);
+    transition: .55s;
+}
+
+
+/*  footer  section */
+
+.footer-section {
+    background: #1d1c1c;
+    padding: 5rem 0;
+    text-align: right;
+    border-top: .2rem solid #1b3b46;
+}
+
+.footer-section p {
+    float: left;
+    color: #fff
+}
+
+.footer-section ul li {
+    display: inline-block;
+    margin: 0 1rem;
+    /*float: right;*/
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-section ul li a:hover {
+    color: #30dae7
+}
+
+
+/* add whatsapp */
+
+.whatsapp {
+    position: fixed;
+    right: 0px;
+    top: 63.5%;
+}
+
+.whatsapp h5 {
+    color: white;
+    background: #20b20f;
+    font-size: 1.29rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.facebook {
+    position: fixed;
+    right: 0px;
+    top: 73%;
+}
+
+.facebook h5 {
+    color: white;
+    background: #0c08fc;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.phone {
+    position: fixed;
+    right: 0px;
+    top: 82.2%;
+}
+
+.phone h5 {
+    color: white;
+    background: #01ff0e;
+    font-size: 1.1rem;
+    padding: 12px;
+    border-radius: 10px;
+}
